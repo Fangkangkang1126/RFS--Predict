@@ -3,7 +3,7 @@
 
 <div align="center">
 
-# An Ensemble Approach for Patient Prognosis of Head and Neck Tumor Using Multimodal Data
+# An Ensemble Approach for Patient RFS Prognosis of Head and Neck Tumor Using Multimodal Data
 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
@@ -14,13 +14,13 @@
 </div>
 
 ## Description
-Accurate prognosis of a tumor can help doctors provide a proper course of treatment and, therefore, save the lives of many. Traditional machine learning algorithms have been eminently useful in crafting prognostic models in the last few decades. Recently, deep learning algorithms have shown significant advancement and improvement when developing diagnosis and prognosis solutions to different healthcare problems. However, most of these solutions rely solely on either imaging or clinical data. Utilizing patient tabular data such as demographics and patient medical history along side imaging data in a multimodal approach to solve a prognosis task has started to gain more interest recently and has the potential to create more accurate solutions. The main issue when using clinical and imaging data to train a deep learning model is to decide on how to combine the information from these sources. We propose a multimodal network that ensembles deep mutli-task logistic regression (MTLR) and Cox proportional hazard model (CoxPH) models to predict prognostic outcomes for patients with head and neck tumors using patient's clinical and imaging (CT and PET) data. Features from CT and PET scans are fused and combined with patient's electronic health records for the prediction. The proposed model is trained and tested on 224 and 110 patient records respectively. Experimental results show that our proposed ensemble solution achieves C-Index of 0.72. 
+肿瘤的准确预后可以帮助医生提供适当的治疗方案，从而拯救许多人的生命。在过去的几十年里，传统的机器学习算法在制作预后模型方面非常有用。在多模态方法中利用患者表格数据，如人口统计学和患者病史，以及成像数据来解决预后任务，最近开始引起更多兴趣，并有可能创造更准确的解决方案。网络合并了深度多任务逻辑回归（MTLR）和考克斯比例危害模型（CoxPH）模型，以利用患者的临床和成像（CT和PET）数据预测头颈部肿瘤患者的预后结果。CT和PET扫描的特征与患者的电子健康记录融合并结合进行预测。
 
 ## How to run
 Install dependencies
 ```yaml
 # clone project
-git clone https://github.com/numanai/BioMedIA-Hecktor2021
+git clone https://github.com/Fangkangkang1126/RFS--Predict
 cd your-repo-name
 
 # [OPTIONAL] create conda environment
@@ -55,12 +55,7 @@ You can override any parameter from command line like this
 python run.py trainer.max_epochs=20 datamodule.batch_size=64
 ```
 
-## Authors
-```yaml
-Numan Saeed (numanai), Ikboljon Sobirov (ikboljon) and Roba Al Majzoub (musk007)
-```
 
-Credits: Hydra-template
 
 <br>
 # RFS--Predict
